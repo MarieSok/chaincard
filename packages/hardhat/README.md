@@ -1,23 +1,13 @@
-# Celo Composer | Hardhat
+# Sample Hardhat Project
 
-## How to use
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-1. Create a copy of `.env.example` and rename it to `.env`.
+Try running some of the following tasks:
 
-2. For Deploying you will need `PRIVATE_KEY` set in `.env`.
-
-3. For verification you will need [Celoscan API Key](https://celoscan.io/myapikey) `CELOSCAN_API_KEY` set in `.env`.
-
-For Alfajores (Testnet) Verification
-
-```bash
-npx hardhat verify [CONTRACT_ADDRESS] [...CONSTRUCTOR_ARGS] --network alfajores
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat run scripts/deploy.ts
 ```
-
-For Mainnet Verification
-
-```bash
-npx hardhat verify [CONTRACT_ADDRESS] [...CONSTRUCTOR_ARGS] --network celo
-```
-
-Check the file `hardhat.config.js` for Celo specific hardhat configuration.
